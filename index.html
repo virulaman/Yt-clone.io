@@ -3,45 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Clone</title>
+    <title>Game Center</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>YouTube Clone</h1>
-        </header>
-<!-- English Videos -->
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/aYc-Lw_9JcY" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/G9VMazP-6TI" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/e1adjNwprE8" frameborder="0" allowfullscreen></iframe>
-</div>
-
-<!-- Spanish Video -->
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/AMRQ1SKIJ-A" frameborder="0" allowfullscreen></iframe>
-</div>
-        <div class="video-container">
-            <div class="video-player">
-                <iframe id="video-player" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-            </div>
-            
-            <div class="video-thumbnails">
-                <!-- Thumbnails will go here -->
-                <img class="thumbnail" data-video-id="dQw4w9WgXcQ" src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Video 1" />
-                <img class="thumbnail" data-video-id="e-ORhEE9VVg" src="https://img.youtube.com/vi/e-ORhEE9VVg/0.jpg" alt="Video 2" />
-                <img class="thumbnail" data-video-id="3JZ_D3ELwOQ" src="https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg" alt="Video 3" />
-            </div>
-        </div>
+    <div class="header">
+        <h1>Game Center</h1>
     </div>
-
+    <div class="games">
+        <button onclick="startGame('pingPong')">Ping Pong</button>
+        <button onclick="startGame('clicker')">Clicker</button>
+        <button onclick="startGame('speedTyping')">Speed Typing</button>
+        <button onclick="startGame('reflexSpeed')">Reflex Speed</button>
+    </div>
+    <div id="gameArea"></div>
     <script src="script.js"></script>
 </body>
 </html>
