@@ -1,1 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f9;
+}
 
+.header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+.games button {
+    margin: 1em;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.games button:hover {
+    background-color: #45a049;
+}
+
+#gameArea {
+    margin-top: 2em;
+    padding: 1em;
+}
